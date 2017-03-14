@@ -31,7 +31,7 @@ class Todos extends React.Component {
     }
 
     render() {
-        let todos = this.state.todos.map((todo, key) => <Todo key={key} description={todo.todo} category={todo.category} />)
+        let todos = this.state.todos.map((todo, key) => <Todo key={key} todoId={todo.id} completed={todo.completed} description={todo.todo} category={todo.category} />)
 
         return <Layout>
             <AddTodo addTodo={this.addTodo} />

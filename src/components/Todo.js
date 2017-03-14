@@ -7,8 +7,8 @@ class Todo extends React.Component {
                 <div className="col-xs-6">
                     <div className="checkbox">
                         <label>
-                            <input type="checkbox" />
-                            {this.props.description}
+                            <input type="checkbox" data-id={this.props.todoId} value={this.props.completed === 'yes' ? 'checked' : ''}/>
+                            <span className={this.props.completed === 'yes' ? "done" : ''}> {this.props.description}</span>
                         </label>
                     </div>
                 </div>

@@ -42,7 +42,7 @@ class AddTodo extends React.Component {
                     category: ''
                 })
 
-                this.state.addTodo(todo)
+                //this.state.addTodo(todo)
             })
         }
     }
