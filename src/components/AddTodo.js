@@ -4,6 +4,7 @@ class AddTodo extends React.Component {
     constructor(props) {
         super(props)
 
+
         this.state = {
             description: '',
             category: '',
@@ -11,16 +12,16 @@ class AddTodo extends React.Component {
         }
     }
 
-    addTodo(getTodos) {
-        fetch('/api/v1/todos', {
-            method: 'POST',
-            headers: {
-                'Content-Type': 'application/json'
-            }
-        })
-        .then(response => response.json())
-        .then(getTodos)
-    }
+    //     addTodo(getTodos) {
+    //     fetch('/api/v1/todos', {
+    //         method: 'POST',
+    //         headers: {
+    //             'Content-Type': 'application/json'
+    //         }
+    //     })
+    //     .then(response => response.json())
+    //     .then(getTodos)
+    // }
 
     onClick() {
         if (this.state.description !== '' && this.state.category !== '') {
@@ -42,7 +43,8 @@ class AddTodo extends React.Component {
                     category: ''
                 })
 
-                //this.state.addTodo(todo)
+                // reloads to do list
+                this.state.addTodo(todo)
             })
         }
     }

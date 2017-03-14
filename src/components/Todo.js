@@ -7,7 +7,8 @@ class Todo extends React.Component {
                 <div className="col-xs-6">
                     <div className="checkbox">
                         <label>
-                            <input type="checkbox" data-id={this.props.todoId} value={this.props.completed === 'yes' ? 'checked' : ''}/>
+                            <input type="checkbox" onChange={(e) => this.props.toggleTodoComplete(this.props.id, e.target.checked)}
+                            checked={this.props.completed === 'yes' ? true : false}/>
                             <span className={this.props.completed === 'yes' ? "done" : ''}> {this.props.description}</span>
                         </label>
                     </div>
