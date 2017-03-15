@@ -9,4 +9,24 @@ img {
     text-decoration: line-through;
 }
 
+body {
+    background: #242F40;
+}
 
+.btn-default {
+    background: #09BC8A;
+}
+
+.label-default {
+    background: #CEFF1A;
+    color: darkslategray;
+    padding: 5px;
+}
+
+h1 {
+    color: white;
+}
+
+h1 > span {
+    color: #CEFF1A;
+}
