@@ -4,6 +4,7 @@ import AddTodo from './AddTodo'
 import Todo from './Todo';
 import { connect } from 'react-redux'
 import { browserHistory } from 'react-router'
+// ^ just pulling one specific component from react-router 
 
 class Todos extends React.Component {
     constructor(props) {

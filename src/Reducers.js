@@ -11,8 +11,7 @@ const initialSharedState = {
 function state(state = initialSharedState, action = {}) {
     switch (action.type) {
         case 'TODOS_UPDATE':
-            return { ...state, todos: action.body }
-        default:
+                    default:
             return state
     }
 }
